@@ -497,6 +497,52 @@ h1 {
   }
 }
 
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+  position: relative;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+
+  text-align: center;
+}
+
+.site-footer::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+
+  height: 1px;
+  background: rgba(79, 84, 111, 0.18);
+}
+
+.footer-copyright {
+  color: var(--new-moon);
+
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 900px) {
+
+  .site-footer {
+    padding: 70px 40px;
+  }
+
+  .site-footer::before {
+    left: 40px;
+    right: 40px;
+  }
+
+}
+
 
 /* ========================================
    INTERACTION STATES
