@@ -243,7 +243,7 @@ h1 {
     Georgia,
     serif;
 
-  font-size: clamp(46px, 6vw, 72px);
+  font-size: clamp(46px, 6vw, 55px);
   font-weight: 500;
   line-height: 0.98;
   text-wrap: balance;
