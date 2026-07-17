@@ -248,11 +248,15 @@ h1 {
 ======================================== */
 
 .site-header {
+  position: relative;
+
   width: 100%;
   padding: 24px 0;
 }
 
 .header-container {
+  position: relative;
+
   width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
 
@@ -288,10 +292,61 @@ h1 {
   letter-spacing: 0.12em;
 }
 
-.nav-list {
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+
   display: flex;
   align-items: center;
-  gap: 32px;
+  justify-content: center;
+  gap: 4px;
+
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  background-color: var(--new-moon);
+}
+
+.main-nav {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  z-index: 10;
+
+  min-width: 180px;
+  padding: 20px 24px;
+
+  background-color: var(--moonlight);
+  border: 1px solid rgba(30, 31, 35, 0.12);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.main-nav.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 
   list-style: none;
 }
@@ -304,4 +359,33 @@ h1 {
   letter-spacing: 0.12em;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+
+/* Header Desktop Layout */
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav {
+    position: static;
+
+    min-width: 0;
+    padding: 0;
+
+    background-color: transparent;
+    border: 0;
+
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
 }
