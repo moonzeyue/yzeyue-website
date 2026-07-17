@@ -44,15 +44,6 @@ body {
    TYPOGRAPHY
 ======================================== */
 
-h1 {
-  font-family:
-    "Cormorant Garamond",
-    Georgia,
-    serif;
-
-  color: var(--moon-tide);
-}
-
 p {
   color: var(--new-moon);
 }
@@ -102,6 +93,11 @@ p {
 
 h1 {
   color: var(--moon-tide);
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
 
   font-size: clamp(64px, 18vw, 140px);
   font-weight: 500;
@@ -245,4 +241,67 @@ h1 {
     gap: 100px;
     align-items: start;
   }
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.site-header {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.header-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  list-style: none;
+}
+
+.nav-list a {
+  color: var(--new-moon);
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
 }

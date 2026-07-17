@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
@@ -15,7 +16,7 @@
 
   <title>YZEYUE | Creative Portfolio</title>
 
-  <!-- Cormorant Garamond for headings -->
+  <!-- Cormorant Garamond -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,32 +25,117 @@
     rel="stylesheet"
   >
 
-  <!-- Connects the HTML to style.css -->
-  <link rel="stylesheet" href="style.css">
-  
+  <!-- Stylesheet -->
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
   <!-- Favicon -->
-<link rel="icon" href="images/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link
+    rel="icon"
+    href="images/favicon/favicon.ico"
+    sizes="any"
+  >
 
-<!-- Apple -->
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="images/favicon/favicon-32x32.png"
+  >
 
-<!-- Web App Manifest -->
-<link rel="manifest" href="site.webmanifest">
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="images/favicon/favicon-16x16.png"
+  >
 
-<!-- Browser Theme -->
-<meta name="theme-color" content="#F5F4EF">
+  <!-- Apple Touch Icon -->
+  <link
+    rel="apple-touch-icon"
+    href="images/favicon/apple-touch-icon.png"
+  >
+
+  <!-- Web App Manifest -->
+  <link
+    rel="manifest"
+    href="site.webmanifest"
+  >
+
+  <!-- Browser Theme -->
+  <meta
+    name="theme-color"
+    content="#F5F4EF"
+  >
 </head>
 
 <body>
-  <main class="landing-page">
-    <section class="hero">
+
+    <!-- Header -->
+  <header class="site-header">
+
+    <div class="header-container">
+
+      <a
+        class="brand"
+        href="index.html"
+      >
+
         <img
-    src="images/zy-logo.png"
-    alt="YZEYUE Monogram"
-    class="hero-logo"
-/>
+          src="images/branding/zy-logo.png"
+          alt="YZEYUE Logo"
+          class="brand-logo"
+        >
+
+        <span class="brand-name">
+          YZEYUE
+        </span>
+
+      </a>
+
+      <nav class="main-nav">
+
+        <ul class="nav-list">
+
+          <li>
+            <a href="#about">
+              About
+            </a>
+          </li>
+
+            <li>
+            <a href="#">
+              Portfolio
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main class="landing-page">
+
+    <!-- Hero -->
+    <section class="hero">
+
+      <img
+        src="images/branding/zy-logo.png"
+        alt="YZEYUE Monogram"
+        class="hero-logo"
+      >
+
       <p class="eyebrow">
         Marketing · Creative Design · Branding
       </p>
@@ -65,38 +151,55 @@
         I help brands express who they are with clarity and confidence.
       </p>
 
-      <a class="hero-link" href="mailto:hello@yzeyue.com">
+      <a
+        class="hero-link"
+        href="mailto:hello@yzeyue.com"
+      >
         Get in touch
       </a>
-    </section>
-    <section class="about">
 
-    <div class="about-left">
+    </section>
+
+    <!-- About -->
+    <section
+      class="about"
+      id="about"
+    >
+
+      <div class="about-left">
 
         <p class="section-number">
-            01 / ABOUT
+          01 / ABOUT
         </p>
 
         <h2>
-            Creative thinking,<br>
-            grounded in marketing experience.
+          Creative thinking,<br>
+          grounded in marketing experience.
         </h2>
 
-    </div>
+      </div>
 
-    <div class="about-right">
+      <div class="about-right">
 
         <p>
-            I'm Moon, the creative behind YZEYUE. With more than eight years of experience across marketing and creative design, I have worked on campaigns, branding, social media and corporate communications.
+          I'm Moon, the creative behind YZEYUE. With more than eight years of experience across marketing and creative design, I have worked on campaigns, branding, social media and corporate communications.
         </p>
 
         <p>
-            My approach combines strategic understanding with thoughtful design, helping brands communicate with clarity, confidence and intention.
+          My approach combines strategic understanding with thoughtful design, helping brands communicate with clarity, confidence and intention.
         </p>
 
-    </div>
+      </div>
 
-</section>
+    </section>
+
   </main>
+
+    <!-- Footer -->
+  <footer class="site-footer">
+
+  </footer>
+
 </body>
+
 </html>
