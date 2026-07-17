@@ -195,7 +195,7 @@ h1 {
   position: relative;
 
   max-width: 1200px;
-  margin: 50px auto 160px;
+  margin: 50px auto 100px;
   padding: 80px 24px 0;
 
   display: grid;
@@ -243,9 +243,9 @@ h1 {
     Georgia,
     serif;
 
-  font-size: clamp(46px, 6vw, 45px);
+  font-size: clamp(36px, 4vw, 42px);
   font-weight: 500;
-  line-height: 0.98;
+  line-height: 1.05;
   text-wrap: balance;
 }
 
@@ -275,7 +275,7 @@ h1 {
     padding-right: 40px;
     padding-left: 40px;
 
-    grid-template-columns: minmax(0, 1.15fr) minmax(360px, 1fr);
+    grid-template-columns: minmax(500px, 1.35fr) 1fr;
     gap: 100px;
     align-items: start;
   }
@@ -497,6 +497,7 @@ h1 {
   }
 }
 
+
 /* ========================================
    FOOTER
 ======================================== */
@@ -506,7 +507,7 @@ h1 {
 
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 40px 24px;
 
   text-align: center;
 }
@@ -530,17 +531,18 @@ h1 {
   letter-spacing: 0.04em;
 }
 
-@media (min-width: 900px) {
 
+/* Footer Desktop Layout */
+
+@media (min-width: 900px) {
   .site-footer {
-    padding: 70px 40px;
+    padding: 48px 40px;
   }
 
   .site-footer::before {
     left: 40px;
     right: 40px;
   }
-
 }
 
 
