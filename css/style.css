@@ -234,6 +234,8 @@ h1 {
 }
 
 .about h2 {
+  max-width: 620px;
+
   color: var(--moon-tide);
 
   font-family:
@@ -241,9 +243,10 @@ h1 {
     Georgia,
     serif;
 
-  font-size: clamp(46px, 11vw, 72px);
+  font-size: clamp(46px, 6vw, 72px);
   font-weight: 500;
-  line-height: 0.92;
+  line-height: 0.98;
+  text-wrap: balance;
 }
 
 .about-right p {
@@ -272,7 +275,7 @@ h1 {
     padding-right: 40px;
     padding-left: 40px;
 
-    grid-template-columns: 1.15fr 1fr;
+    grid-template-columns: minmax(0, 1.15fr) minmax(360px, 1fr);
     gap: 100px;
     align-items: start;
   }
@@ -280,6 +283,10 @@ h1 {
   .about::before {
     left: 40px;
     right: 40px;
+  }
+
+  .about-right {
+    padding-top: 10px;
   }
 
   .about-right p {
