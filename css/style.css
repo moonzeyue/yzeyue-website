@@ -448,7 +448,7 @@ h1 {
 
 /* Header Desktop Layout */
 
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) and (hover: hover) and (pointer: fine) {
   .site-header {
     padding: 24px 0;
   }
